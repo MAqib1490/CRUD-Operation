@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Project</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD Application</h1>
+        <form id="userForm">
+            <input type="text" id="name" placeholder="Enter name" required />
+            <input type="email" id="email" placeholder="Enter email" required />
+            <button type="submit">Add User</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userTable">
+                <!-- Dynamic Content -->
+            </tbody>
+        </table>
+    </div>
+    <script src="crud.js"></script>
+</body>
+</html>
